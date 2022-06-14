@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:background="@color/cardbaground">
+
+        <ImageView
+            android:id="@+id/image_map"
+            android:layout_width="match_parent"
+            android:layout_height="266dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="27dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="90dp"
+            android:layout_height="24dp"
+            android:paddingTop="2dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="17dp"
+            app:cardBackgroundColor="#000000"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_map">
+
+            <TextView
+                android:id="@+id/item_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TextView"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="90dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="27dp"
+            android:paddingTop="2dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            app:cardBackgroundColor="#000000"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_map">
+
+            <TextView
+                android:id="@+id/item_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TextView"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/ride_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="16dp"
+            android:text="Ride id :"
+            android:textColor="@color/white"
+            android:textFontWeight="500"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <TextView
+            android:id="@+id/ride_api"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Ride id :"
+            android:textColor="@color/white"
+            android:textFontWeight="500"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ride_item"
+            app:layout_constraintStart_toEndOf="@+id/ride_item"
+            app:layout_constraintTop_toTopOf="@+id/ride_item" />
+
+        <TextView
+            android:id="@+id/orginstation_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="16dp"
+            android:text="Orgin station :"
+            android:textColor="@color/white"
+            android:textFontWeight="500"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ride_item" />
+
+        <TextView
+            android:id="@+id/orginstation_api"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Orgin station"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/orginstation_item"
+            app:layout_constraintStart_toEndOf="@+id/orginstation_item"
+            app:layout_constraintTop_toTopOf="@+id/orginstation_item" />
+
+        <TextView
+            android:id="@+id/staionpath_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="16dp"
+            android:text="Station_path :"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orginstation_item" />
+
+        <TextView
+            android:id="@+id/staionpath_api"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="station path"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/staionpath_item"
+            app:layout_constraintStart_toEndOf="@+id/staionpath_item"
+            app:layout_constraintTop_toTopOf="@+id/staionpath_item" />
+
+        <TextView
+            android:id="@+id/date_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="16dp"
+            android:text="Date :"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/staionpath_item" />
+
+        <TextView
+            android:id="@+id/date_api"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Date"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/date_item"
+            app:layout_constraintStart_toEndOf="@+id/date_item"
+            app:layout_constraintTop_toTopOf="@+id/date_item" />
+
+        <TextView
+            android:id="@+id/distance_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="27dp"
+            android:text="Distance :"
+            android:textColor="@color/white"
+
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_item" />
+
+        <TextView
+            android:id="@+id/distance_api"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/distance_item"
+            app:layout_constraintStart_toEndOf="@+id/distance_item"
+            app:layout_constraintTop_toTopOf="@+id/distance_item" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

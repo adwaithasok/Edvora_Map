@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Edvora</string>
+    <string name="user_name">Dhruv Sing</string>
+    <string name="tab1">Rides:</string>
+    <string name="tab2">Nearest</string>
+    <string name="tab3">Upcoming</string>
+    <string name="tab4">Past</string>
+    <string name="tab5">Filters</string>
+
+
+
+</resources>
